@@ -5,8 +5,6 @@ type SampleProductsOptions = {
   collection_id?: string
 }
 
-// can't use the ProductStatus imported
-// from the core within admin cusotmizations
 enum ProductStatus {
   PUBLISHED = "published"
 }
@@ -17,7 +15,7 @@ export default function getSampleProducts ({
 }: SampleProductsOptions): AdminPostProductsReq[] {
   return [
     {
-      title: "Medusa T-Shirt",
+      title: "Bloshi Store",
       status: ProductStatus.PUBLISHED,
       collection_id,
       discountable: true,
